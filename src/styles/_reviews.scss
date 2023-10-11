@@ -1,0 +1,73 @@
+@use 'variaveis';
+
+.reviews {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: flex-start;
+    padding-top: 120px;
+
+    &__header {
+        text-align: left;
+        width: 1080px;
+        padding-bottom: 40px;
+    }
+
+
+    &__content {
+        width: 1080px;
+        text-align: left;
+        display: inherit;
+        justify-content: space-between;
+
+
+
+        h2 {
+            margin-bottom: 40px;
+        }
+        
+        &__review {
+            width: 516px;
+            height: 381px;
+            background-color: #fff;
+            padding-left: 40px;
+            padding-top: 25px;
+
+            &__head {
+                display: flex;
+
+                .review-infos {
+                    padding-left: 8px;
+                    
+
+                    &__name {
+                        margin-bottom: 1px;
+                    }
+                }
+            }
+
+            &__body {
+                margin-top: 16px;
+                margin-right: 52px;
+            }
+
+            &__footer {
+                padding-top: 72px;
+                
+                .review-date {
+                    font-size: 14px;
+                    font-weight: bold;
+                    color: variaveis.$corTitulo;
+                }
+            }
+
+        }
+
+        p {
+            color: variaveis.$corTitulo;
+        }
+
+    }
+
+
+}

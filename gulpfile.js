@@ -2,6 +2,8 @@ const gulp = require('gulp');
 const sass = require('gulp-sass')(require('sass'));
 const uglify = require('gulp-uglify');
 
+
+
 function scripts() {
     return gulp.src('./src/scripts/*.js')
         .pipe(uglify())

@@ -1,0 +1,38 @@
+@use 'variaveis';
+
+.hero {
+    padding: 5.6vw;
+    min-height: 100vh;
+    background-image: url(../images/Hero.png);
+    background-size: cover;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+
+    &__content {
+        max-width: 556px;
+        background-color: transparent; 
+
+        
+
+        .text--small {
+            color: variaveis.$corSecundaria;
+            font-size: 14px;
+        }
+            
+        &__title--big {
+            font-size: 64px;
+        }
+    
+    } 
+
+}
+
+h1, h3, p {
+    margin-bottom: 24px
+    
+}
+

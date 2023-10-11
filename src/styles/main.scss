@@ -1,7 +1,38 @@
-$corFundo: #E1E1E1;
+@use 'hero';
+@use 'variaveis';
+@use 'elenco';
+@use 'preview';
+@use 'reviews';
+@use 'footer';
+@import 'node_modules/bootstrap/dist/css/bootstrap.min.css';
 
-
+* {
+    box-sizing: border-box;
+    font-family: Helvetica, sans-serif;
+    list-style: none;
+    color: #fff;    
+}
 
 body {
-    background-color: $corFundo;
+    background: variaveis.$corFundo !important;
+    margin: 0;
+    padding: 0;
 }
+
+.title {
+    color: variaveis.$corTitulo;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.title--big {
+    font-size: 64px;
+
+}
+
+    
+.subtitle {
+    font-size: 14px;
+    font-weight: 100;
+}
+
